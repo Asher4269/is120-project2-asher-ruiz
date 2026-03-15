@@ -17,11 +17,10 @@ body {
   display: grid;
   grid-template-areas: 
   "header"
-  "nav"
   "main"
   "footer";
   grid-column: 1fr;
-  grid-row: auto auto auto auto;
+  grid-row: auto auto auto;
     margin: 2%;
 
     overflow: hidden;
@@ -48,8 +47,8 @@ grid-area: header;
   gap: 1.5rem;
 }
 
-nav {
-    grid-area: nav;
+header h1 {
+      animation: header-ani 2s ease-out;
 }
 
 main {
@@ -62,6 +61,8 @@ main {
     flex-wrap: wrap;
     gap: 0.5rem;
     margin: 1%;
+
+    animation: other-tools 3s ease-out;
 }
 
 footer {
@@ -79,6 +80,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    animation: desc-in 4s;
 }
 
 .description p {
@@ -149,6 +152,8 @@ footer {
     inset 0 -0.4rem 0.9rem rgba(255, 255, 255, 0.5),
     0 3rem 3rem rgba(0, 0, 0, 0.3),
     0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.8);
+
+    animation: button-in 2s ease-out;
 }
 .button .wrap {
   font-size: 25px;
@@ -286,5 +291,46 @@ footer {
 @media screen and (min-width: 1424px) {
     body {
         height: 98vh;
+    }
+}
+
+@keyframes header-ani {
+    from {
+        transform: translateY(-500%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px)
+    }
+}
+
+@keyframes button-in {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+@keyframes desc-in {
+    0% {
+        opacity: 0
+    }
+
+    60% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes other-tools {
+    from {
+        transform: translateX(100%);
     }
 }
