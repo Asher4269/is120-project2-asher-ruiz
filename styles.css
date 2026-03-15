@@ -294,6 +294,14 @@ footer {
     }
 }
 
+@media (prefers-reduced-motion: reduce) {
+* {
+animation: none !important;
+transition: none !important;
+scroll-behavior: auto !important;
+}
+}
+
 @keyframes header-ani {
     from {
         transform: translateY(-500%);
