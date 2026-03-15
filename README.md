@@ -10,6 +10,8 @@ Project 2: With Responsiveness in mind, I decided to poor my efforts this projec
 
 Responsiveness is a beast. 1 minute you think your page is perfectly responsive, and then you take a look at the Samsung edition 3 and realize that some part of the CSS wasn't perfectly adjusted for everything. Unfortunately, despite my best efforts this time around, I was not able to reach perfection in responsiveness. However, I can take pride in how far I have come, in the fact that now my page adjusts as the user changes the window sizes.
 
+As well, I learned that linking an svg file can make the html file a lot more readable. I think in the future I will do this as I did with my background instead of how I embedded my hero. There's a lot of code that kind of crowds everything.
+
 ### Initial Ideas:
 
 The goal of this project was to make my landing page as strong as possible. I wanted it to be simple, responsive, and follow the general guidelines of design.
