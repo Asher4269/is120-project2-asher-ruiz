@@ -48,7 +48,7 @@ grid-area: header;
 }
 
 header h1 {
-      animation: header-ani 2s ease-out;
+      animation: header-ani 1.5s ease-out;
 }
 
 main {
@@ -62,7 +62,7 @@ main {
     gap: 0.5rem;
     margin: 1%;
 
-    animation: other-tools 3s ease-out;
+    animation: other-tools 8s ease-out;
 }
 
 footer {
@@ -81,7 +81,7 @@ footer {
     justify-content: center;
     align-items: center;
 
-    animation: desc-in 4s;
+    animation: desc-in 3s;
 }
 
 .description p {
@@ -153,7 +153,7 @@ footer {
     0 3rem 3rem rgba(0, 0, 0, 0.3),
     0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.8);
 
-    animation: button-in 2s ease-out;
+    animation: button-in 5s ease-out;
 }
 .button .wrap {
   font-size: 25px;
@@ -314,11 +314,17 @@ scroll-behavior: auto !important;
 }
 
 @keyframes button-in {
-    from {
-        transform: scale(0)
+    0% {
+        transform: scale(0);
+        opacity: 0.5;
     }
 
-    to {
+    75% {
+        transform: scale(0);
+        opacity: 0.5;
+    }
+
+    100% {
         transform: scale(1)
     }
 }
